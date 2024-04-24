@@ -408,6 +408,22 @@ img {
   left: 0;
   padding: 1rem 0;
 }
+.rules-image {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+.imageRuels {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 
 @media screen and (max-width: 48em) {
   :root {
