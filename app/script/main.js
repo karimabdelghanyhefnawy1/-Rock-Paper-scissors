@@ -9,6 +9,12 @@ theRules.onclick = function () {
       }
 }
 
+let theRest = document.getElementById("resetButton")
+
+theRest.onclick = function () {
+  window.location.reload();
+}
+
 
 
 
