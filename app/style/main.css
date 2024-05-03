@@ -424,6 +424,15 @@ img {
   transform: translate(-50%, -50%);
   z-index: 9999;
 }
+.you-win {
+  display: none;
+}
+.you-lose {
+  display: none;
+}
+#play-again {
+  display: none;
+}
 @media screen and (max-width: 48em) {
   :root {
     --Header-padding: 2rem;
