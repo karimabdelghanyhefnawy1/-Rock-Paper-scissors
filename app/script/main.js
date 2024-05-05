@@ -31,7 +31,7 @@ rockIcon.onclick = function hideRandomButton() {
   let randomIndex = Math.floor(Math.random() * circles1.length);
   let circleToHide1 = circles1[randomIndex];
 
-  circleToHide1.style.display = 'none';
+  circleToHide1.style.display = 'none' ;
   triangleImage.style.display = 'none';
 
   if (circleToHide1 === paperIcon) {
@@ -89,10 +89,10 @@ let resultLose = document.querySelector(".you-lose")
 
 
 playAgain.onclick = function () {
-  rockIcon.style.display = 'block';
-  paperIcon.style.display = 'block';
-  scissorsIcon.style.display = 'block';
-  triangleImage.style.display = 'block';
+  rockIcon.style.cssText = "opacity: 1;";
+  paperIcon.style.cssText = "opacity: 1;";
+  scissorsIcon.style.cssText = "opacity: 1;";
+  triangleImage.style.cssText = "opacity: 1;";
   resultWin.style.display = 'none';
   resultLose.style.display = 'none';
   playAgain.style.display = 'none';
