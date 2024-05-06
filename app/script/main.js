@@ -19,6 +19,7 @@ let rockIcon = document.querySelector(".hero__item--rock")
 let paperIcon = document.querySelector(".hero__item--paper")
 let scissorsIcon = document.querySelector(".hero__item--scissors")
 let triangleImage = document.querySelector(".triangle")
+let counterElement = document.querySelector(".h2");
 
 
 rockIcon.onclick = function hideRandomButton() {
@@ -27,6 +28,7 @@ rockIcon.onclick = function hideRandomButton() {
   let resultWin1 = document.querySelector(".you-win")
   let resultLose1 = document.querySelector(".you-lose")
   let playAgain1 = document.getElementById("play-again")
+  let counterElement = document.querySelector(".h2");
 
   let randomIndex = Math.floor(Math.random() * circles1.length);
   let circleToHide1 = circles1[randomIndex];
@@ -35,9 +37,18 @@ rockIcon.onclick = function hideRandomButton() {
   triangleImage.style.display = 'none';
 
   if (circleToHide1 === paperIcon) {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount + 1;
+    counterElement.textContent = newCount;
     resultWin1.style.display = 'block';
     playAgain1.style.display = 'block';
   }else {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount - 1 ;
+    if (newCount < 0) {
+      newCount = 0;
+    }
+    counterElement.textContent = newCount;
     resultLose1.style.display = 'block';
     playAgain1.style.display = 'block';
   }
@@ -56,9 +67,18 @@ paperIcon.onclick = function hideRandomButton() {
   triangleImage.style.display = 'none';
 
   if (circleToHide2 === scissorsIcon) {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount + 1;
+    counterElement.textContent = newCount;
     resultWin2.style.display = 'block';
     playAgain2.style.display = 'block';
   }else {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount - 1 ;
+    if (newCount < 0) {
+      newCount = 0;
+    }
+    counterElement.textContent = newCount;
     resultLose2.style.display = 'block';
     playAgain2.style.display = 'block';
   }
@@ -76,9 +96,18 @@ scissorsIcon.onclick = function hideRandomButton() {
   triangleImage.style.display = 'none';
 
   if (circleToHide3 === rockIcon) {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount + 1;
+    counterElement.textContent = newCount;
     resultWin3.style.display = 'block';
     playAgain3.style.display = 'block';
   }else {
+    let currentCount = parseInt(counterElement.textContent);
+    let newCount = currentCount - 1 ;
+    if (newCount < 0) {
+      newCount = 0;
+    }
+    counterElement.textContent = newCount;
     resultLose3.style.display = 'block';
     playAgain3.style.display = 'block';
   }

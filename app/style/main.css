@@ -433,6 +433,19 @@ img {
 #play-again {
   display: none;
 }
+
+#rock {
+  display: none;
+}
+#paper {
+  display: none;
+}
+#scissors {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 48em) {
   :root {
     --Header-padding: 2rem;
