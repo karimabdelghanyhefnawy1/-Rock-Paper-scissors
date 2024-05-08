@@ -520,3 +520,14 @@ body {
     transition-duration: 0s !important;
   }
 }/*# sourceMappingURL=main.css.map */
+@media screen and (max-width: 425px) {
+  #play-again {
+    margin-top: 25rem;
+  }
+  .you-win {
+    margin-top: 25rem;
+  }
+  .you-lose {
+    margin-top: 25rem;
+  }
+}
